@@ -229,3 +229,9 @@ hashmap.c:78:6: error: ‘Eliminado’ undeclared (first use in this function)
 hashmap.c:78:6: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 6ba47ec
+Fri 09 Sep 2022 05:33:16 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|2
+total_score: 50/70
+ddc3c1f
