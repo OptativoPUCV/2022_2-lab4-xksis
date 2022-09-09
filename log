@@ -128,3 +128,20 @@ hashmap.c:108:1: error: control reaches end of non-void function [-Werror=return
 cc1: all warnings being treated as errors
 Compilation failed
 ad019fc
+Fri 09 Sep 2022 05:26:03 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:106:16: error: comparison between pointer and integer [-Werror]
+  106 |   if(map->size != NULL)
+      |                ^~
+hashmap.c:105:10: error: unused variable ‘i’ [-Werror=unused-variable]
+  105 |   size_t i;
+      |          ^
+hashmap.c:108:1: error: control reaches end of non-void function [-Werror=return-type]
+  108 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+63ac58f
