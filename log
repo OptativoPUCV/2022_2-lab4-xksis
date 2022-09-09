@@ -80,3 +80,29 @@ Fri 09 Sep 2022 05:14:09 PM UTC:
  tests:  5|4
 total_score: 30/70
 67f4a55
+Fri 09 Sep 2022 05:25:08 PM UTC: 
+ hashmap.c | 24 +++++++++++++++++++++---
+ 1 file changed, 21 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:80:3: error: expected expression before ‘}’ token
+   80 |   }
+      |   ^
+hashmap.c: In function ‘searchMap’:
+hashmap.c:86:14: error: implicit declaration of function ‘has’; did you mean ‘hash’? [-Werror=implicit-function-declaration]
+   86 |   size_t i = has(key,map->capacity);
+      |              ^~~
+      |              hash
+hashmap.c: In function ‘firstMap’:
+hashmap.c:106:16: error: comparison between pointer and integer [-Werror]
+  106 |   if(map->size != NULL)
+      |                ^~
+hashmap.c:105:10: error: unused variable ‘i’ [-Werror=unused-variable]
+  105 |   size_t i;
+      |          ^
+hashmap.c:108:1: error: control reaches end of non-void function [-Werror=return-type]
+  108 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+1043942
