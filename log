@@ -18,3 +18,13 @@ hashmap.c:56:17: error: expected expression before ‘]’ token
       |                 ^
 Compilation failed
 fb12468
+Fri 09 Sep 2022 04:48:48 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘createMap’:
+hashmap.c:56:17: error: expected expression before ‘]’ token
+   56 |   mapa->buckets[][] = NULL;
+      |                 ^
+Compilation failed
+5796dc9
