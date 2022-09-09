@@ -69,7 +69,7 @@ HashMap * createMap(long capacity) {
   mapa->buckets = (Pair**)calloc(capacity,sizeof(Pair*));
   mapa->size=0;
   mapa->capacity = capacity;
-  mapa->current=-1;
+  mapa->current = -1;
   return mapa;
 }
 
@@ -103,8 +103,8 @@ Pair * searchMap(HashMap * map,  char * key) {
 }
 
 Pair * firstMap(HashMap * map) {
-  size_t i;
-  if(map->size != NULL)
+  //size_t i;
+  //if(map->size != NULL)
     return NULL;
 }
 
