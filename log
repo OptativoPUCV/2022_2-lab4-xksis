@@ -201,3 +201,17 @@ Fri 09 Sep 2022 05:30:52 PM UTC:
  tests:  8|3
 total_score: 40/70
 977a168
+Fri 09 Sep 2022 05:32:02 PM UTC: 
+ hashmap.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:77:4: error: expected expression before ‘Pair’
+   77 |   *Pair *Eliminado =searchMap(map,key);
+      |    ^~~~
+hashmap.c:78:6: error: ‘Eliminado’ undeclared (first use in this function)
+   78 |   if(Eliminado!=NULL){
+      |      ^~~~~~~~~
+hashmap.c:78:6: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+113368b

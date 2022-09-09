@@ -74,12 +74,12 @@ HashMap * createMap(long capacity) {
 }
 
 void eraseMap(HashMap * map,  char * key) {    
-  //*Pair *Eliminado =searchMap(map,key);
-  //if(Eliminado!=NULL){
-  //  Eliminado = 
-  //}
+  *Pair *Eliminado =searchMap(map,key);
+  if(Eliminado!=NULL){
+    Eliminado->key = NULL;
+    map->size--;
+  }
   
-
 }
 
 Pair * searchMap(HashMap * map,  char * key) {   
