@@ -185,3 +185,13 @@ Fri 09 Sep 2022 05:27:48 PM UTC:
  tests:  6|4
 total_score: 30/70
 68c43b5
+Fri 09 Sep 2022 05:30:44 PM UTC: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:77:4: error: expected expression before ‘Pair’
+   77 |   *Pair *Eliminado =searchMap(map,key);
+      |    ^~~~
+Compilation failed
+7d669c0
