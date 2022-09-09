@@ -63,3 +63,9 @@ hashmap.c:43:9: error: unused variable ‘newPair’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 1cb4f9d
+Fri 09 Sep 2022 05:13:30 PM UTC: 
+ hashmap.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+ tests:  5|4
+total_score: 30/70
+52be467
