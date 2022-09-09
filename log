@@ -215,3 +215,17 @@ hashmap.c:78:6: error: ‘Eliminado’ undeclared (first use in this function)
 hashmap.c:78:6: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 113368b
+Fri 09 Sep 2022 05:33:02 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:77:4: error: expected expression before ‘Pair’
+   77 |   *Pair Eliminado =searchMap(map,key);
+      |    ^~~~
+hashmap.c:78:6: error: ‘Eliminado’ undeclared (first use in this function)
+   78 |   if(Eliminado!=NULL){
+      |      ^~~~~~~~~
+hashmap.c:78:6: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+6ba47ec
