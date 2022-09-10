@@ -64,15 +64,10 @@ void enlarge(HashMap * map) {
   map->capacity *= 2;
   map->buckets = (Pair **)calloc(map->capacity,sizeof(Pair *));
   map->size = 0;
-  for (i = 0; i < map->capacity; i++)
+  for(i=0 ; i < map->capacity/2; i++)
   {
-    if(bucketaux[i] != NULL)
-    {
+    if(bucketaux[i] != NULL){
       insertMap(map,bucketaux[i]->key,bucketaux[i]->value);
-    }
-    if(map->buckets[i] != NULL && map->buckets[i]->key != NULL)
-    {
-      bucketaux[i] = createPair(map->buckets[i]->key,map->buckets[i]->value);
     }
   }
 }
