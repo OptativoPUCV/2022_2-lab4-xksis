@@ -75,7 +75,8 @@ HashMap * createMap(long capacity) {
 
 void eraseMap(HashMap * map,  char * key) {    
   Pair *Eliminado =searchMap(map,key);
-  if(Eliminado!=NULL){
+  if(Eliminado != NULL)
+  {
     Eliminado->key = NULL;
     map->size--;
   }
@@ -88,14 +89,16 @@ Pair * searchMap(HashMap * map,  char * key) {
   
   while(1){
     if(map->buckets[i] == NULL || map->buckets[i]->key == NULL)return NULL;
-    if(is_equal(key, map->buckets[i]->key)){
+    if(is_equal(key, map->buckets[i]->key))
+    {
       map->current = i;
       return map->buckets[i];
     }
     i++;
     cont++;
     if(cont == map->capacity)break;
-    if(i == map->capacity){
+    if(i == map->capacity)
+    {
       i = 0;
     }
   }
@@ -103,8 +106,15 @@ Pair * searchMap(HashMap * map,  char * key) {
 }
 
 Pair * firstMap(HashMap * map) {
-  //size_t i;
-  //if(map->size != NULL)
+  size_t i;
+  for(i=0;i<map->size;i++)
+  {
+    if(map->buckets[i] != NULL || map->buckets[i]->key != NULL)
+    {
+      map->current = i;
+      return map->buckets[i];
+    }
+  }
     return NULL;
 }
 
