@@ -247,3 +247,14 @@ Sat 10 Sep 2022 01:30:46 PM UTC:
  tests:  13|2
 total_score: 50/70
 3165a61
+Sat 10 Sep 2022 01:34:19 PM UTC: 
+ hashmap.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:123:3: error: statement with no effect [-Werror=unused-value]
+  123 |   for(i; i < map->capacity; i++)
+      |   ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+5c09f91
