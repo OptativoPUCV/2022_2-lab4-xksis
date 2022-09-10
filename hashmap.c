@@ -70,6 +70,10 @@ void enlarge(HashMap * map) {
     {
       insertMap(map,bucketaux[i]->key,bucketaux[i]->value);
     }
+    if(map->buckets[i] != NULL && map->buckets[i]->key != NULL)
+    {
+      bucketaux[i] = createPair(map->buckets[i]->key,map->buckets[i]->value);
+    }
   }
 }
 
